@@ -29,6 +29,6 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - name: Change Directory
-    - run: cd /home/thegoran/actions-runner/_work/thegorannext/thegorannext
+      run: cd /home/thegoran/actions-runner/_work/thegorannext/thegorannext
     - run: pm2 reload 0
     
