@@ -4,7 +4,11 @@ const HomePage = () => {
   return (
     <div>
       <h1>Home page</h1>
-      <h2>testing CI</h2>
+      <h2>CI/CD pipeline   created.   +</h2>
+      <h3>NGINX in place,  proxy from 3000 to 80(single app)  + </h3>
+      <h3>Domain name updated(propagated)  + </h3>
+      <h3>SSL Cert Bot in place.  + </h3>
+      <h3> Replicate for remaining sites, to ensure ensure  gha workers  and nginx and certbot will  works isolated as expected - </h3>
     </div>
     
   )
