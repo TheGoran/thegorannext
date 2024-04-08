@@ -1,0 +1,31 @@
+
+
+name: TheGoran CI
+
+on:
+  push:
+    branches: [ "master" ]
+  
+jobs:
+  build:
+
+    runs-on: self-hosted
+
+    strategy:
+      matrix:
+        node-version: [20.10.0]
+        #bellow is just example of how we can add env through github secrets
+   # env: 
+       #  NEXT_WEBSITE_URL: ${{sercrets.NEXT_WEBSITE_URL}}
+        
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+    
