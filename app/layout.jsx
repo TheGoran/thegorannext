@@ -18,7 +18,7 @@ export const metadata = {
 const MainLayout = ({children}) => {    // we will pass the pages as  children(destructured) prop. 
   return (
     <html lang="en">
-        <body>
+        <body className='bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-sky-600 to-blue-800 '>
           <NavBar />
             <main>{ children }</main>
         </body>
