@@ -11,13 +11,14 @@ import '@/assets/styles/globals.css'   //the @ means{points} basically start fro
 export const metadata = {
     title: 'TheGoran',
     description: 'Developer and Digital Artist',
-    keywords: 'Developer, Digital Artist, programmer, frontend, backend, fullstack, react, nextjs, dev ops, software, software solution, hire, build, solution'
-
+    keywords: 'Developer, Digital Artist, programmer, frontend, backend, fullstack, react, nextjs, dev ops, software, software solution, hire, build, solution',
+   
 }
 
 const MainLayout = ({children}) => {    // we will pass the pages as  children(destructured) prop. 
   return (
     <html lang="en">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <body className='bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-sky-600 to-blue-800 '>
           <NavBar />
             <main>{ children }</main>
