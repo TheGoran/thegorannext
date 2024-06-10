@@ -1,13 +1,18 @@
 import React from 'react'
 import Link from 'next/link'
+import { PiGithubLogoThin } from "react-icons/pi";
 
 
 const HomePage = () => {
   console.log("this is  da home page yo")
   return (
-    <div>
-       <h1 className='text-3xl'>Home Page</h1>
-       <Link href="/projects">Show Projects</Link>
+    <div className='flex flex-col items-center justify-center'>
+       <h1 className='text-9xl font-black'>🏗️Under Construction</h1>
+       <br />
+       <p>Check my GitHub repos for prjects and code overview and some demos</p>
+       <br />
+       <Link href="https://github.com/TheGoran?tab=repositories" className='text-6xl font-semibold '> <PiGithubLogoThin className='inline' /> GitHub </Link>
+       
     </div>
     
   )
