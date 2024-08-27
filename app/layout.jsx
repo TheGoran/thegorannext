@@ -6,7 +6,7 @@ import React from 'react'
 import NavBar from '@/components/NavBar'
 import '@/assets/styles/globals.css'   //the @ means{points} basically start from root of project then dwell into paths lol. 
 
-// Defining global metadata that will apply to each page/component, if they dont have own custom metadata. 
+// Defining global metadata that will apply to each page/component,.. if they dont have own custom metadata. 
 
 export const metadata = {
     title: 'TheGoran',
