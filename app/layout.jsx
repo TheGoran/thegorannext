@@ -19,7 +19,7 @@ const MainLayout = ({children}) => {    // we will pass the pages as  children(d
   return (
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        <body className='bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-sky-600 to-blue-800 '>
+        <body className='h-full bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-sky-600 to-blue-800 '>
           <NavBar />
             <main>{ children }</main>
         </body>
